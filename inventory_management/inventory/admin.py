@@ -1,3 +1,7 @@
-from django.contrib import admin
+# inventory/admin.py
 
-# Register your models here.
+from django.contrib import admin
+from .models import Item, User
+
+admin.site.register(Item)
+admin.site.register(User)
