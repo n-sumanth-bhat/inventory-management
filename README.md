@@ -105,19 +105,19 @@ CACHE_URL=redis://redis:6379/1
 ## API Endpoints
 
 ### Authentication
-- **Register**: `POST /auth/register/`
+- **Register**: `POST /api/auth/register/`
   - Request Body: `{"username": "user", "password": "pass"}`
-- **Login**: `POST /auth/login/`
+- **Login**: `POST /api/auth/login/`
   - Request Body: `{"username": "user", "password": "pass"}`
-- **Token Retrieve**: `POST /auth/token/`
+- **Token Retrieve**: `POST /api/auth/token/`
   - Request Body: `{"username": "user", "password": "pass"}`
-- **Token Refresh**: `POST /auth/token/refresh/`
+- **Token Refresh**: `POST /api/auth/token/refresh/`
   - Request Body: `{"refresh": "refresh_token"}`
 
 ### Items
-- **Create Item**: `POST /items/`
+- **Create Item**: `POST /api/items/`
   - Request Body: `{"name": "item", "description": "desc", "quantity": 10, "price": 99.99}`
-- **Get, Update, Delete Item**: `GET, PUT, DELETE /item/<int:item_id>/`
+- **Get, Update, Delete Item**: `GET, PUT, DELETE /api/item/<int:item_id>/`
 
 ## Conventions
 
